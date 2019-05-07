@@ -1,10 +1,11 @@
 {
-  "name": "shipping-service",
+  "name": "shipping-service-14",
   "version": "1.0.0",
   "description": "4 CloudNativeBootcamp",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "main": "app.js",
+    "scripts": {
+        "test": "jest tests",
+        "start": "node src/app.js"
   },
   "repository": {
     "type": "git",
@@ -14,10 +15,22 @@
   "author": "",
   "license": "ISC",
   "jest": {
-  	"testEnvironment": "node"
+    "testEnvironment": "node"
   },
   "bugs": {
     "url": "https://github.com/leyrer-ibm/shipping-service/issues"
   },
-  "homepage": "https://github.com/leyrer-ibm/shipping-service#readme"
+  "homepage": "https://github.com/leyrer-ibm/shipping-service#readme",
+    "engines": {
+        "node": "8.11.3",
+        "npm": "5.6.x"
+    },
+    "dependencies": {
+        "axios": "^0.18.0",
+        "express": "^4.16.3"
+    },
+    "devDependencies": {
+        "nock": "^9.4.2",
+        "sinon": "^6.1.3"
+    }
 }
